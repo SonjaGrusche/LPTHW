@@ -11,6 +11,8 @@ txt = open(filename)
 print "Here's your file %r:" % filename
 # this line uses the variable we set in line 8 to open it and print it (reading it out)
 print txt.read()
+# closing the txt file
+print txt.close()
 
 print "Type the file name again:"
 # using the raw_input to get input by the user
@@ -20,7 +22,8 @@ file_again = raw_input("> ")
 txt_again = open(file_again)
 # same function as line 13
 print txt_again.read()
-
+# closing the txt file
+print txt_again.close()
 
 # commandsare also called "functions" or "methods"
 
