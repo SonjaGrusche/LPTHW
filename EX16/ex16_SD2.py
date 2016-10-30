@@ -10,6 +10,8 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
+# w gives us "write access"
+# and if the file already exists w will truncate it by itself
 target = open(filename, 'w')
 
 print "Truncating the file. Goodbye!"
