@@ -53,11 +53,11 @@ print poem
 print "--------------"
 
 
-five = 10 - 2 + 3 - 5
+five = 10 - 2 + 3 - 6
 print "This should be five: %s" % five
 
 def secret_formula(started):
-    jelly_beans = started + 500
+    jelly_beans = started * 500
     jars = jelly_beans / 1000
     crates = jars / 100
     return jelly_beans, jars, crates
@@ -74,19 +74,20 @@ start_point = start_point / 10
 print "We can also do that this way:"
 print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
 
+import ex26
+sentence = "All good\tthings come to those who wait."
 
-sentence = "All god\tthings come to those who weight."
-
-#words = ex25.break_words(sentence)
-#sorted_words = ex25.sort_words(words)
-
-#print_first_word(words)
-#print_last_word(words)
-#print_first_word(sorted_words)
-#print_last_word(sorted_words)
-#sorted_words = ex25.sort_sentence(sentence)
-#print_sorted_words
-
-#print_first_and_last(sentence)
-
-#print_first_and_last_sorted(senence)
+words = ex26.break_words(sentence)
+words
+sorted_words = ex26.sort_words(words)
+sorted_words
+ex26.print_first_word(words)
+ex26.print_last_word(words)
+words
+ex26.print_first_word(sorted_words)
+ex26.print_last_word(sorted_words)
+sorted_words
+sorted_words = ex26.sort_sentence(sentence)
+sorted_words
+ex26.print_first_and_last(sentence)
+ex26.print_first_and_last_sorted(sentence)
