@@ -10,6 +10,7 @@ and requires an explanation
 \n\t\twhere there is none.
 """
 
+
 print "--------------"
 print poem
 print "--------------"
@@ -28,7 +29,7 @@ def secret_formula(started):
 start_point = 10000
 beans, jars, crates = secret_formula(start_point)
 
-print "With a starting point of_ %d" % start_start_point
+print "With a starting point of_ %d" % start_point
 print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
 
 start_point = start_point / 10
