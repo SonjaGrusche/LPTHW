@@ -34,3 +34,4 @@ target.write("%r\n%r\n%r\n" % (line1, line2, line3))
 
 print "And finally, we close it."
 target.close()
+# sorry for making more files than I actually needed

@@ -4,7 +4,7 @@
 # *args is pretty much the same as argv for functions
 def print_two(*args):
     # everything indented after the colon will be attached to"print_two"
-    # first ind line unpacksthe arguments (just like for scripts)
+    # first indented line unpacksthe arguments (just like for scripts)
     arg1, arg2 = args
     print "arg1: %r, arg2: %r" % (arg1, arg2)
 

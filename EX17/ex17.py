@@ -1,3 +1,4 @@
+# this time I made everything in one .py script
 from sys import argv
 from os.path import exists
 

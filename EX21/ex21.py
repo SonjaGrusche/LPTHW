@@ -28,6 +28,7 @@ print "Age: %d, Height: %d, Weight: %d, IQ: %d" % (age, height, weight, iq)
 # A puzzle for the extra credit, type it anyway.
 print "Here is a puzzle."
 
-what = add(age, substract(height, multiply(weight, divide(iq, 2)))) # doesn't work
+# not working
+what = add(age, substract(height, multiply(weight, divide(iq, 2))))
 
 print "That becomes: ", what, "Can yu do it by hand?"
