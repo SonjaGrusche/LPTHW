@@ -25,8 +25,8 @@ print "Let's print three lines:"
 current_line = 1
 print_a_line(current_line, current_file) # This is line 1
 
-current_line = current_line + 1
+current_line += 1
 print_a_line(current_line, current_file) # This is line 2
 
-current_line = current_line + 1
+current_line += 1
 print_a_line(current_line, current_file) # This is line 3
