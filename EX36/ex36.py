@@ -45,7 +45,7 @@ def hallway_y():
     print """
 
     You are standing inside a hallway of an old mansion.
-    The door behind you is looked.
+    The door behind you is locked.
     Of course you don't want to be there.
     You need to find the key to get out.
     So why are you still standing here?
@@ -62,7 +62,7 @@ def hallway_y():
         print "Oh, this door is locked, too."
         hallway_again()
     elif choice == "m":
-        quizroom_one()
+        quizroom()
     elif choice == "r":
         right_door()
     else:
