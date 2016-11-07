@@ -2,6 +2,7 @@
 # Have fun!
 # Sonja Grusche
 
+from sys import exit
 
 def start():
     print """
@@ -56,6 +57,16 @@ def hallway_y():
         print "Oh, this door is locked, too."
         hallway_again()
     elif choice == "m":
+        print """
+        Entering the middle door a bright and warm light reveals a big hall.
+        Two wooden stairs arranged in two beautifully shapened bows are framing
+        the room and lead towards a big golden door.
+        Underneath the stairs at the end of the room are two more doors.
+        Both have the same superior fassade.
+        The ceiling is adorned with an outrageously expensive appearing chandelier.
+        Right under the chandelier sits a friendly looking old man.
+        Next to him stands a little wooden table, on top a cup of tea or coffee.
+        """
         quizroom()
     elif choice == "r":
         right_door()
@@ -123,15 +134,16 @@ def hallway_again():
         print "Oh, this door is locked, too."
         hallway_again()
     elif choice == "m":
-        print "Entering the middle door a bright and warm light reveals a big hall."
-        print "Two wooden stairs arranged in two beautifully shapened bows are framing"
-        print "the room and lead towards a big golden door."
-        print "Underneath the stairs at the end of the room are two more doors."
-        print "Both have the same superior fassade."
-        print "The ceiling is adorned with an outrageously expensive appearing chandelier."
-        print "Right under the chandelier sits a friendly looking old man."
-        print "Next to him stands a little wooden table, on top a cup of tea or coffee."
-
+        print """
+        Entering the middle door a bright and warm light reveals a big hall.
+        Two wooden stairs arranged in two beautifully shapened bows are framing
+        the room and lead towards a big golden door.
+        Underneath the stairs at the end of the room are two more doors.
+        Both have the same superior fassade.
+        The ceiling is adorned with an outrageously expensive appearing chandelier.
+        Right under the chandelier sits a friendly looking old man.
+        Next to him stands a little wooden table, on top a cup of tea or coffee.
+        """
         quizroom()
     elif choice == "r":
         right_door()
@@ -258,6 +270,8 @@ def old_man():
             """
             choice = raw_input("> ")
 
+            question_number += 1
+
             if choice == "1":
                 print "Good choice!"
                 top_door()
@@ -380,11 +394,12 @@ def hallway_final():
         The key doesn't fit. Nothing happens.
         Well, that is unsatisfying.
         """
-    elif choice == "r":
+    elif choice == "b":
         print """
         The door opens.
         You are a free human again.
-        Congratulations!
-        """
+        Congratulations, %r!
+        """ % username
+        exit(0)
 
 start()
