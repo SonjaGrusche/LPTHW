@@ -123,16 +123,15 @@ def hallway_again():
         print "Oh, this door is locked, too."
         hallway_again()
     elif choice == "m":
-        print """
-        Entering the middle door a bright and warm light reveals a big hall.
-        Two wooden stairs arranged in two beautifully shapened bows are framing
-        the room and lead towards a big golden door.
-        Underneath the stairs at the end of the room are two more doors.
-        Both have the same superior fassade.
-        The ceiling is adorned with an outrageously expensive appearing chandelier.
-        Right under the chandelier sits a friendly looking old man.
-        Next to him stands a little wooden table, on top a cup of tea or coffee.
-        """
+        print "Entering the middle door a bright and warm light reveals a big hall."
+        print "Two wooden stairs arranged in two beautifully shapened bows are framing"
+        print "the room and lead towards a big golden door."
+        print "Underneath the stairs at the end of the room are two more doors."
+        print "Both have the same superior fassade."
+        print "The ceiling is adorned with an outrageously expensive appearing chandelier."
+        print "Right under the chandelier sits a friendly looking old man."
+        print "Next to him stands a little wooden table, on top a cup of tea or coffee."
+
         quizroom()
     elif choice == "r":
         right_door()
@@ -217,7 +216,7 @@ def old_man():
             elif choice == "3":
                 dead(sorry)
             elif choice == "4":
-                """
+                print """
                 Absolutely correct!
                 """
                 question_number += 1
@@ -275,6 +274,10 @@ def old_man():
 
 def top_door():
     print """
+    The door is open.
+    When did he... open.. nevermind.
+    I can't wait to get out of here!
+    The old man's stare was a little bit too much for me.
     Inside of the room a golden table stands in the middle.
     A key is placed on a silky cushion.
     Next to the table a sign is placed.
