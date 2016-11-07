@@ -1,3 +1,8 @@
+# Homework EX36 - The Mansion
+# Have fun!
+# Sonja Grusche
+
+
 def start():
     print """
 
