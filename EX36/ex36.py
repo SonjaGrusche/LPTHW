@@ -209,7 +209,8 @@ def old_man():
     print """
 
     The letter says:
-    Only if you can answer following three questions I am allowed to help you.
+    Only if you can answer following three questions I am allowed to help you
+    and will open the door at the end of the stairs for you.
     If your answer is wrong, your journey will be over.
     Keep in mind, that these questions are unbelievable difficult.
     No one has ever solved all three of them.
@@ -290,16 +291,16 @@ def old_man():
 
             if choice == "1":
                 print "Good choice!"
-                quizroom()
+                top_door()
             elif choice == "2":
                 print "Marvellous!"
-                quizroom()
+                top_door()
             elif choice == "3":
                 print "You are a genius, %r!" % username
-                quizroom()
+                top_door()
             elif choice == "4":
                 print "Ugh, that was really close! Congrats!"
-                quizroom()
+                top_door()
 
 
 def top_door():
