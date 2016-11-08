@@ -279,12 +279,7 @@ def old_man():
 
 
 def top_door():
-    print
-    # The door is open.
-    # When did he... open.. nevermind.
-    # I can't wait to get out of here!
-    # The old man's stare was a little bit too much for me.
-    """
+    print """
     Inside of the room a golden table stands in the middle.
     A key is placed on a silky cushion.
     Next to the table a sign is placed.
