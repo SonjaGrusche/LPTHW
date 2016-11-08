@@ -25,6 +25,7 @@ def start():
 
 def dead(why):
     print why, "Try again!"
+    exit(0)
 
 
 print "First of all, I need you to give your player a name!"
@@ -108,7 +109,7 @@ def right_door():
     I don't think we will find a key down there.
     But do you want to go down anyway?
     > 'Yes, let's check it out!' (type "y")
-    > 'Oh hello no, I don't like basements!' (type "n")
+    > 'Oh hell no, I don't like basements!' (type "n")
     """
 
     choice = raw_input('> ')
