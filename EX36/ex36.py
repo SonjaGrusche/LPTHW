@@ -270,23 +270,21 @@ def old_man():
 
             if choice == "1":
                 print "Good choice!"
-                top_door()
             elif choice == "2":
                 print "Marvellous!"
-                top_door()
             elif choice == "3":
                 print "You are a genius, %r!" % username
             elif choice == "4":
                 print "Ugh, that was really close! Congrats!"
-                top_door()
 
 
 def top_door():
-    print """
-    The door is open.
-    When did he... open.. nevermind.
-    I can't wait to get out of here!
-    The old man's stare was a little bit too much for me.
+    print
+    # The door is open.
+    # When did he... open.. nevermind.
+    # I can't wait to get out of here!
+    # The old man's stare was a little bit too much for me.
+    """
     Inside of the room a golden table stands in the middle.
     A key is placed on a silky cushion.
     Next to the table a sign is placed.
