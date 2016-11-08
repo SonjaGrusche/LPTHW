@@ -280,9 +280,9 @@ def old_man():
 
 def top_door():
     print """
-    Inside of the room a golden table stands in the middle.
-    A key is placed on a silky cushion.
-    Next to the table a sign is placed.
+    Inside of the room a golden table is standing in the middle.
+    A key was placed on a silky cushion.
+    Next to the table a sign was placed.
     There are three items laying on top of it.
     Apart of that the room is empty.
     There aren't even windows.
@@ -313,7 +313,7 @@ def top_door():
         See the three items?
         A tin of ravioli.
         George Orwell's '1984' paperback edition.
-        And box of matches.
+        And a box of matches.
         The key has the exact same weight as one of the items.
         After you take the key off the table you'll have two seconds to
         replace it with something else.
