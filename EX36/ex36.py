@@ -95,7 +95,7 @@ def hallway_n():
         print "Oh, this door is locked, too."
         hallway_again()
     elif choice == "m":
-        quizroom_one()
+        quizroom()
     elif choice == "r":
         right_door()
     else:
@@ -222,19 +222,14 @@ def old_man():
             """
             choice = raw_input('> ')
 
-            if choice == "1":
+            if choice != "4":
                 dead(sorry)
-            elif choice == "2":
-                dead(sorry)
-            elif choice == "3":
-                dead(sorry)
-            elif choice == "4":
+            else:
                 print """
                 Absolutely correct!
                 """
                 question_number += 1
-            else:
-                dead("Well, this is awkward... ")
+
 
         if question_number == 2:
             print """
@@ -281,7 +276,6 @@ def old_man():
                 top_door()
             elif choice == "3":
                 print "You are a genius, %r!" % username
-                top_door()
             elif choice == "4":
                 print "Ugh, that was really close! Congrats!"
                 top_door()
