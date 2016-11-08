@@ -175,7 +175,7 @@ def quizroom():
         elif choice == "right":
             print "White, glistening light takes your eyesight away."
             dead("It makes you see your worst nightmares. No Escape.")
-        elif choice == "old man":
+        elif choice == "old man" and not talked_with_oldman:
             print "The old man points on a letter on the table."
             talked_with_oldman = True
             old_man()
@@ -195,7 +195,7 @@ def quizroom():
 
 
 sorry = "You shall not pass!"
-
+now = "You made all the right decisions. You can go ahead now."
 
 def old_man():
     question_number = 1
@@ -269,13 +269,13 @@ def old_man():
             question_number += 1
 
             if choice == "1":
-                print "Good choice!"
+                print "Good choice! " + now
             elif choice == "2":
-                print "Marvellous!"
+                print "Marvellous! " + now
             elif choice == "3":
-                print "You are a genius, %r!" % username
+                print "You are a genius, %r! " % username + now
             elif choice == "4":
-                print "Ugh, that was really close! Congrats!"
+                print "Ugh, that was really close! Congrats! " + now
 
 
 def top_door():
