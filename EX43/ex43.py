@@ -98,7 +98,7 @@ class LaserWeaponArmory(Scene):
         print "and you need the code to get the bomb out.  If you get the code"
         print "wrong 10 times then the lock closes forever and you can't"
         print "get the bomb.  The code is 3 digits."
-        code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
+        code = "%d%d%d" % (1, 2, 3) #(randint(1,9), randint(1,9), randint(1,9))
         guess = raw_input("[keypad]> ")
         guesses = 0
 
@@ -166,7 +166,7 @@ class EscapePod(Scene):
         print "but you don't have time to look.  There's 5 pods, which one"
         print "do you take?"
 
-        good_pod = randint(1,5)
+        good_pod = 2 # randint(1,5)
         guess = raw_input("[pod #]> ")
 
 
