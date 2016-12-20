@@ -28,4 +28,4 @@ class Lexicon(pbject):
             except ValueError: # this iscalled exception handle
                 return ('error', item)
 
-lexicon = Lexivon()
+lexicon = Lexicon()

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    a {
+      color: rgb(255, 255, 255);
+    }
+    h1 {
+      font-family: monospace;
+    }
+    #dead {
+      text-align:center;
+      padding-top:17%;
+      font-family: "Lucida Console", Courier, sans-serif;
+      color:rgb(255, 255, 255);
+    }
+    #world {
+      padding-top:10%;
+      text-align:center;
+      font-family: "Lucida Console", Courier, sans-serif;
+      color:rgb(255, 255, 255);
+      }
+    body {
+{% if background %}
+      background:url({{url_for('static', filename=background)}});
+{% else %}
+      background:url({{url_for('static', filename='darkspace.jpg')}});
+{% endif %}
+      background-repeat:no-repeat;
+      background-size:100%;
+      color:rgb(193, 193, 193);
+    }
+    button {
+      background-color: rgba(0,0,0,0);
+      border: hidden;
+      color: white;
+      padding: 2px 4px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: white;
+      color: black;
+}
+    </style>
+    <title>LPTHW Webgame</title>
+  </head>
+
+<body>
+  {% block content %}
+  <p>Empty Layout</p>
+  {% endblock %}
+</body>
+</html>

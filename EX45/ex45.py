@@ -1,4 +1,4 @@
-# Billy's nightmare
+# Billy's Nightmare
 # - Sonja Grusche -
 
 from sys import exit
